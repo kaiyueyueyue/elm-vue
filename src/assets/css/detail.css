@@ -1,0 +1,386 @@
+/*common section*/
+
+
+/*
+body,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,ul,li,ol,p,
+table,textarea{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size:24.15vw;
+}
+html,body{
+	height:100%;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+}
+*/
+
+.total {
+    display: -webkit-flex;
+    flex-direction: column;
+    width: 100%;
+    /*height:100%;*/
+    /*overflow-y: scroll;*/
+}
+
+
+/*detail section*/
+
+.d-nav {
+    width: 100%;
+    height: 1.25rem;
+    padding-top: 0.2rem;
+    background: gray url(../images/detail/d-nav_bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.d-nav:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(0deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, .5));
+}
+
+.d-nav .d-nav_icon {
+    /*width:100%;*/
+    padding-top: 0.12rem;
+    /*background:pink;*/
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.d-nav_icon .icon-zuojiantou {
+    color: white;
+    font-size: 0.2rem;
+    float: left;
+    padding-left: 0.15rem;
+}
+
+.d-right_icon {
+    float: right;
+    padding-right: 0.15rem;
+}
+
+.d-right_icon a {
+    float: left;
+}
+
+.d-right_icon i {
+    float: left;
+    color: white;
+    font-size: 0.2rem;
+    margin-left: 0.18rem;
+}
+
+.d-right_icon .icon-diandiandian {
+    position: relative;
+}
+
+.d-right_icon .icon-diandiandian:after {
+    position: absolute;
+    top: 0;
+    right: -13px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid red;
+    border-radius: 50%;
+}
+
+
+/*第二版块*/
+
+.d-header {
+    width: 100%;
+    height: 1.57rem;
+    /*background:#eee;*/
+    padding-top: 0.25rem;
+}
+
+.d-header h3 {
+    font-size: .2rem;
+    text-align: center;
+    line-height: 0.3rem;
+}
+
+.d-header .d-eva {
+    line-height: .32rem;
+    font-size: 0.12rem;
+    text-align: center;
+    color: #939393;
+}
+
+.d-header .d-eva span:first-child {
+    margin-right: 0.12rem;
+}
+
+.d-header .d-eva span:nth-child(2) {
+    margin-right: 0.12rem;
+}
+
+.d-ticket {
+    font-size: 0.12rem;
+    color: #6a3602;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+}
+
+.d-ticket span:first-child {
+    width: 1.12rem;
+    line-height: 0.24rem;
+    background: #ffe577;
+    padding: 0 0.16rem;
+    border-right: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.d-ticket span:nth-child(2) {
+    width: 0.33rem;
+    height: 0.24rem;
+    background: #ffe577;
+    padding: 0 0.06rem 0 0.04rem;
+    border-left: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.d-active {
+    width: 3.35rem;
+    margin: 0 auto;
+}
+
+.d-activities {
+    font-size: 0.12rem;
+    line-height: .24rem;
+    color: #727272;
+    overflow: hidden;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.d-activities div span:first-child {
+    font-size: 9px;
+    color: #879677;
+    padding: 1px;
+    line-height: 0.12rem;
+    align-self: center;
+    border: 1px solid #e7f1e4;
+    background: #e8fae2;
+}
+
+.d-activities span:last-child i {
+    display: inline-block;
+    font-size: 0.06rem;
+    margin-left: 0.05rem;
+    transform: rotate(270deg);
+}
+
+.d-active p {
+    line-height: 0.24rem;
+    font-size: .12rem;
+    width: 3.34rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #a5a5a5;
+}
+
+
+/*活动部分选项卡*/
+
+.d-shop_tab {
+    width: 100%;
+    height: .33rem;
+    /*background:#ccc;*/
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+}
+
+.d-shop_tab a {
+    font-size: 0.14rem;
+    color: #252525;
+    line-height: .32rem;
+}
+
+.d-shop_tab .d-shop_tab_active {
+    border-bottom: 2px solid #0074fe;
+    font-weight: bold;
+}
+
+.d-recommend {
+    width: 100%;
+    background: #eee;
+    padding: 0.16rem;
+    box-sizing: border-box;
+}
+
+.d-recommend .d-recommend_title {
+    font-size: 0.12rem;
+    font-weight: bold;
+    margin-bottom: .1rem;
+}
+
+.d-rec div a {
+    display: block;
+}
+
+.d-rec div a img {
+    /* width:1.2rem; */
+}
+
+.d-recommend .d-rec h4 {
+    font-size: 0.12rem;
+    font-weight: bold;
+    line-height: .32rem;
+}
+
+.d-rec {
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+}
+
+.d-rec .d-sales {
+    font-size: 0.09rem;
+    line-height: 0.09rem;
+    color: #bcbcbc;
+}
+
+.d-recommend_price {
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-bottom: 0.04rem;
+}
+
+.d-recommend_price span:first-child {
+    font-size: 0.16rem;
+    line-height: 0.4rem;
+    color: #f62807;
+    font-weight: bold;
+}
+
+.d-recommend_price a i {
+    display: block;
+    line-height: 0.4rem;
+    font-size: .22rem;
+    color: #2395ff;
+}
+
+.d-sell {
+    width: 100%;
+    height: 5rem;
+    /*flex:1;*/
+    display: -webkit-flex;
+    /*background:pink;*/
+    /*overflow-y:scroll; */
+}
+
+.d-sell_left {
+    width: .8rem;
+    background: #f8f8f8;
+    float: left;
+    padding-bottom: 0.5rem;
+    overflow-y: auto;
+}
+
+.d-sell_left h3 {
+    font-size: 0.12rem;
+    line-height: 0.24rem;
+    background: white;
+    padding-bottom: 0.12rem;
+    padding-left: 0.15rem;
+}
+
+.d-sell_left h4 {
+    font-size: 0.12rem;
+    line-height: 0.16rem;
+    padding: 0.16rem 0 0.16rem 0.15rem;
+    /*padding-left:0.15rem;*/
+    color: #5c5c5c;
+}
+
+.d-sell_right {
+    width: 3.34rem;
+    overflow-y: auto;
+    float: left;
+}
+
+.d-sell_right h3 {
+    font-size: 0.12rem;
+    line-height: 0.24rem;
+    color: #646464;
+    padding-left: 0.12rem;
+    /*margin-bottom:0.12rem;*/
+}
+
+.d-sell_right h3 span {
+    font-size: 0.1rem;
+    line-height: 0.24rem;
+    color: #b8b8b8;
+}
+
+.d-sell_right_food {
+    display: -webkit-flex;
+    /* padding: 0.12rem 0.16rem 0.09rem 0.12rem; */
+    /* overscroll-behavior-x:  */
+    /*justify-content: space-between;*/
+}
+
+.d-sell_right_food img {
+    margin-right: 0.12rem;
+}
+
+.d-sell_right_cont {
+    flex: 1;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 0.16rem;
+    margin-right: 0.16rem;
+}
+
+.d-sell_right_food div h4 {
+    font-size: 0.16rem;
+    line-height: 0.16rem;
+    margin-bottom: 0.06rem;
+    color: #262626;
+}
+
+.d-sell_sales {
+    width: 1.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.1rem;
+    line-height: 0.2rem;
+    color: #9c9c9c;
+}
+
+.d-sell_price {
+    font-size: 0.16rem;
+    line-height: 0.24rem;
+    font-weight: bold;
+    color: #fd1900;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.d-sell_price i {
+    font-weight: normal;
+    color: #2497fc;
+    font-size: 0.22rem;
+}

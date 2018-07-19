@@ -1,0 +1,341 @@
+.find {
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+
+/*header*/
+
+.findHeader {
+    width: 100%;
+    height: 0.43rem;
+    background: #009cff;
+}
+
+.findHeader span {
+    font-size: 0.18rem;
+    color: white;
+    line-height: 0.43rem;
+    text-align: center;
+    display: block;
+}
+
+
+/*圣杯布局*/
+
+.findMain {
+    width: 100%;
+    -webkit-flex: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+/*nav*/
+
+.findNav {
+    width: 100%;
+    background: white;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    margin-bottom: 0.12rem;
+}
+
+.findNav li {
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid #f3f3f3;
+    padding: 0.19rem 0.16rem;
+}
+
+.findNav li:nth-child(even) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.findNav li:nth-child(odd) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.findNav li a {
+    display: -webkit-flex;
+    justify-content: space-around;
+}
+
+.findNav li a span {
+    font-size: 0.15rem;
+    color: #e88f28;
+    line-height: 0.27rem;
+    display: block;
+}
+
+.findNav li a b {
+    font-size: 0.12rem;
+    line-height: 0.27rem;
+    color: #999999;
+    font-weight: 100;
+    display: block;
+}
+
+.findNav li a img {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+
+/*banner*/
+
+.findBanner {
+    width: 100%;
+    height: 1.18rem;
+    margin-bottom: 0.12rem;
+}
+
+.findBanner img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination span {
+    width: 0.05rem;
+    height: 0.05rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: -0.2rem 0.02rem;
+}
+
+
+/*title*/
+
+.titleContent {
+    width: 100%;
+    background: white;
+    height: 0.73rem;
+}
+
+.titleContentTop {
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.titleContent img {
+    width: 0.2rem;
+    height: 0.07rem;
+    padding-top: 0.34rem;
+}
+
+.titleContent i {
+    font-size: 0.17rem;
+    padding-top: 0.29rem;
+    color: #b2494e;
+    padding: 0.29rem 0.1rem 0;
+}
+
+.titleContent h2 {
+    padding-top: 0.23rem;
+    font-size: 0.19rem;
+    padding-right: 0.1rem;
+}
+
+.titleContent p {
+    font-size: 0.11rem;
+    text-align: center;
+    color: #989898;
+}
+
+
+/*content*/
+
+.findContent {
+    margin-bottom: 0.1rem;
+    width: 100%;
+    background: white;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+}
+
+.findContent li {
+    padding: 0 3%;
+    width: 44%;
+}
+
+.findContent li a {
+    border: 1px solid #f5f5f5;
+}
+
+.findContent li a .f-content1 {
+    width: 100%;
+    height: 1.9rem;
+}
+
+.findContent li a h4 {
+    font-size: 0.16rem;
+    line-height: 0.22rem;
+    color: #333333;
+    /* text-align: center; */
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.findContent li a p {
+    line-height: 0.2rem;
+    font-size: 0.1rem;
+    color: #646464;
+    padding-left: 0.1rem;
+}
+
+.findContent li a .findContent-img {
+    width: 100%
+}
+
+.findContentBox {
+    padding: 0.1rem;
+    display: -webkit-flex;
+    justify-content: flex-start;
+}
+
+.findContentBox span {
+    font-size: 0.13rem;
+    color: #ff5f08;
+    display: block;
+    padding-right: 0.1rem;
+}
+
+.findContentBox i {
+    font-size: 0.1rem;
+    color: #dc7b74;
+    border: 1px solid #dc7b74;
+    border-radius: 5px;
+    font-style: normal;
+}
+
+.findContentBot {
+    border-top: 1px dashed #dbdbdb;
+    display: -webkit-flex;
+    margin: 0 0.1rem;
+}
+
+.findContentBot img {
+    padding-right: 0.05rem;
+    padding-top: 0.14rem;
+    width: 0.12rem;
+    height: 0.12rem;
+}
+
+.findContentBot b {
+    line-height: 0.36rem;
+    font-size: 0.11rem;
+    color: #969696;
+    display: block;
+    font-weight: 100;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.findContent .findMore {
+    width: 100%;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.findContent .findMore span {
+    padding-right: 0.1rem;
+    display: block;
+    font-size: 0.13rem;
+    color: #9b9b9b;
+    line-height: 0.58rem;
+}
+
+.findContent .findMore img {
+    width: 0.05rem;
+    height: 0.08rem;
+    padding-top: 0.26rem;
+}
+
+
+/*bot*/
+
+.findBot {
+    width: 100%;
+    background: white;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+}
+
+.findBot li {
+    width: 30%;
+    padding: 0 1%;
+}
+
+.findBot a img {
+    width: 0.54rem;
+    height: 0.2rem;
+}
+
+.findBot .f-bot1 {
+    padding-top: 0.1rem;
+    width: 100%;
+    height: 0.85rem;
+}
+
+.findBot p {
+    font-size: 0.12rem;
+    color: #333333;
+    line-height: 0.27rem;
+}
+
+.findBotBox {
+    display: -webkit-flex;
+    justify-content: flex-start;
+}
+
+.findBotBox span {
+    display: block;
+    font-size: 0.12rem;
+    color: #f45923;
+    line-height: 0.27rem;
+    padding-right: 0.1rem;
+}
+
+.findBotBox b {
+    display: block;
+    font-size: 0.09rem;
+    color: #aeaeae;
+    line-height: 0.27rem;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+.findBot .findMore {
+    width: 100%;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.findBot .findMore span {
+    padding-right: 0.1rem;
+    display: block;
+    font-size: 0.13rem;
+    color: #9b9b9b;
+    line-height: 0.58rem;
+}
+
+.findBot .findMore img {
+    width: 0.05rem;
+    height: 0.08rem;
+    padding-top: 0.26rem;
+}
